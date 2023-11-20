@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #434343;
+    align-items: center;
+}
+
+main.cards{
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 470px;
+    margin-left: 32px;
+
+    
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card.icon{
+    width: 65px;
+    height: 65px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card h3{
+    margin: 16px 0;
+    font-size: 100%;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: rgb(28, 27, 27);
+}
+
+main.cards section.card.ideia button{
+    background: linear-gradient(to right, #8f5fe1,#dfcbff);
+
+
+}
+ main.cards section.card.visag button{
+    background: linear-gradient(to right, #3e8aff,#bbdeff);
+ }
+
+ main.cards section.card.probl button{
+    background: linear-gradient(to right, #d9567e, #ffc7d9);
+ }
+
+ main.cards section.card.ideia{
+    box-shadow: 20px 20px 50px -30px #9f66ff;
+ }
+
+ main.cards section.card.visag{
+    box-shadow: 20px 20px 50px -30px #3e8aff;
+ }
+
+ main.cards section.card.probl{
+    box-shadow: 20px 20px 50px -30px #fe5f8f;
+ }
+
+ @media screen and (max-width:720px){
+    main.cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main.cards section.card{
+    margin-left: 0;
+    }
+    main.card section.card:last-child{
+        margin-bottom: 0;
+    }
+    main.cards section.card button{
+        font-size: 70%;
+    }
+
+ }

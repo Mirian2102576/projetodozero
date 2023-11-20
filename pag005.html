@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="script.js">
+    
+    <title>Galeria de fotos</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    padding: 10px;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 4fr 3fr 4fr;
+    gap: 10px;
+    background-color: rgb(96, 75, 90);
+   
+    
+    grid-template-areas:
+    'steve inserir titulo daniel'
+    'leelo grid grid felix'
+    'leelo lara rdne fauxels';
+
+}
+
+.div{
+    position: relative;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+  
+
+
+
+
+}
+
+
+
+
+.f1{
+    background-image: url(Imagens/pexels-cottonbro-studio-3993449.jpg);
+
+    grid-area: steve;
+
+}
+.f2{
+    background-image:url(Imagens/salãoII.jpeg);
+    
+    grid-area: inserir;
+}
+
+.f3{
+    background-image: url(Imagens/salãoIX.jpeg);
+   
+    grid-area: titulo;
+}
+.f4{
+    background-image: url(Imagens/salãoV.jpeg);
+    grid-area: daniel;
+}
+
+.f5{
+    background-image: url(Imagens/salãoVI.jpeg);
+
+    grid-area: fauxels;
+}
+
+.f6{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    grid-area: grid;
+}
+.f7{
+    background-image: url(Imagens/salãoVII.jpeg);
+    grid-area: felix;
+}
+.f8{
+    background-image: url(Imagens/salãoVIII.jpeg);
+    grid-area: lara;
+}
+.f9{
+    background-image: url(Imagens/salãoX.jpeg);
+    grid-area: leelo;
+    
+}
+.f10{
+    background-image: url(Imagens/salãoXI.jpeg);
+  
+    grid-area: rdne;
+}
+  
+
+     
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="f1"></div>
+        <div class="f2"></div>
+        <div class="f3"></div>
+        <div class="f4"></div>
+        <div class="f5"></div>
+        <div class="f6">Galeria de fotos</div>
+        <div class="f7"></div>
+        <div class="f8"></div>
+        <div class="f9"></div>
+        <div class="f10"></div>
+    </div>
+
+        <h3 class="voltar"><a href="index.html" rel="prev">Voltar para página inicial</a></h3>
+        
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mirian Kurita">
+    <meta name="keywords" content="salão de beleza, cortes, makes">
+    <link rel="shortcut icon" href="Imagens/logo.ico" type="image/x-icon">
+    <title>Salão Mirian Kurita</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="cards.css"> -->
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="Imagens/logo.ico" alt="Logo">
+        <script>
+            alert("Bem vindo(a) à nossa página!")
+        </script> 
+         <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover, .dropdown:hover .dropbtn {
+            background-color: rgb(148, 84, 84);
+          }
+          
+          li.dropdown {
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .dropdown-content a:hover {background-color: #f1f1f1;}
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          </style>
+          
+         
+          
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pag002.html">Contatos</a></li>
+            <li><a href="pag003.html">Serviços</a></li>
+            <li><a href="pag005.html" target="_blank">Galeria de fotos</a></li>
+            <li><a href="pag004.html" target="_blank">Inspirações</a></li>
+          </ul> 
+
+    </header>
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Aqui quem brilha é você</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">No Salão Mirian Kurita  nosso objetivo é fazer você brilhar!</h2>
+                <p class="conteudo-principal-escrito-paragrafo">Criamos looks lindos e modernos para as clientes, com foco em estilos versáteis para o dia a dia. </p>
+                <p class="conteudo-principal-escrito-paragrafo">Se você quer algo fashion, tradicional ou para um evento especial, nós podemos ajudar você.</p>
+                
+                <a href="pag006.html" target="_blank"><button class="conteudo-principal-escrito-botao" >Encontre-nos</button>
+            </div>
+            <img class="conteudo-principal-imagem" src="Imagens/pexels-cottonbro-studio-3993449.jpg" alt="Imagem de lavatório">
+        </section>
+
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">Experiência completa de serviços</h3>
+            <p class="conteudo-secundario-paragrafo">Acreditamos que você é seu melhor acessório. </p>
+            <p class="conteudo-secundario-paragrafo">Por esse motivo, oferecemos uma experiência completa de serviços de  cabelos e maquiagem.</p>
+            
+        </section>
+
+
+        <section class="conteudo-terciario">
+            <img class="conteudo-terciario-imagem" src="Imagens/salãoVI.jpeg" alt="">
+            <p class="conteudo-terciario-imagem-paragrafo">Cabelo</p>            
+            <img class="conteudo-terciario-imagem" src="Imagens/salãoII.jpeg" alt="">            
+            <p class="conteudo-terciario-imagem-paragrafo">Make</p>
+
+        </section>
+    </main>
+
+    <style>
+main.cards{
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 470px;
+    margin-left: 32px;
+
+    
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card.icon{
+    width: 45px;
+    height: 45px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card h3{
+    margin: 16px 0;
+    font-size: 100%;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: rgb(28, 27, 27);
+}
+
+main.cards section.card.ideia button{
+    background: linear-gradient(to right, #8f5fe1,#dfcbff);
+
+
+}
+ main.cards section.card.visag button{
+    background: linear-gradient(to right, #3e8aff,#bbdeff);
+ }
+
+ main.cards section.card.probl button{
+    background: linear-gradient(to right, #d9567e, #ffc7d9);
+ }
+
+ main.cards section.card.ideia{
+    box-shadow: 20px 20px 50px -30px #9f66ff;
+ }
+
+ main.cards section.card.visag{
+    box-shadow: 20px 20px 50px -30px #3e8aff;
+ }
+
+ main.cards section.card.probl{
+    box-shadow: 20px 20px 50px -30px #fe5f8f;
+ }
+
+ @media screen and (max-width:720px){
+    main.cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    main.cards section.card{
+    margin-left: 0;
+    }
+    main.card section.card:last-child{
+        margin-bottom: 0;
+    }
+    main.cards section.card button{
+        font-size: 70%;
+    }
+
+ }
+    </style>
+
+    <main class="cards">
+        <section class="card ideia">
+            <div class="icon">
+                <img src="Imagens/retrato-de-uma-jovem-confusa-olhando-para-o-cabelo-dela (1).jpg" alt="imagem jovem confusa olhando para o cabelo dela">
+            </div>
+            <h3>Cronograma Capilar</h3>
+            <span>Como cuidar da saúde dos seus cabelos</span>
+            <a href="https://www.loreal-paris.com.br/o-que-e-cronograma-capilar-entenda-para-que-serve-cada-etapa-e-anote-as-dicas-de-produtos-passo-a-passo-de-como-fazer?&&gclid=CjwKCAiA0syqBhBxEiwAeNx9N2sfA1NUK9DLklzIKhji8stbSzqI5YhfKiDvr-AUPnM64AU45XGZfxoCIFsQAvD_BwE&gclsrc=aw.ds" target="_blank"><button>Veja</button></a>
+
+        </section>
+
+        <section class="card visag">
+            <div class="icon">
+                <img src="Imagens/Captura de tela 2023-11-14 054335.png" alt="imagem com marcações em rosto, olho e boca">
+            </div>
+            <h3>Visagismo</h3>
+            <span>Valorize a beleza do seu rosto</span>
+            <a href="https://lenscope.com.br/blog/visagismo-o-que-e-tecnicas-e-como-usar-a-seu-favor/"target="_blank"><button>Veja</button></a>
+
+        </section>
+
+
+        <section class="card ideia">
+            <div class="icon">
+                <img src="Imagens/close-up-no-cabelo-com-caspa (1).jpg" alt="imagem cabelos com caspa">
+            </div>
+            <h3>Problemas do couro cabeludo</h3>
+            <span>Como cuidar da saúde dos seus cabelos</span>
+            <a href="https://www.victorromero.com.br/quais-as-principais-doencas-do-couro-cabeludo/" target="_blank"><button>Veja</button></a>
+
+        </section>
+
+
+
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-escrito">Av 18 de Junho</p>
+        <p class="rodape-escrito">Bastos-SP</p>
+        <p class="rodape-escrito">Criado por Mirian Kurita</p>
+    </footer>
+
+    
+</body>
+</html>

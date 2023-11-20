@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="contato.css" media="screen">
+    <title>Contato</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Agendamento</h1>
+        <p id="subtitulo">Contate-nos</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" >
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" >
+                
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" >
+            
+        </div>
+
+        <div class="campo">
+            <label for="sexo"><strong>Sexo</strong></label>
+            <label>
+                <input type="radio" name="sexo" value="feminino" checked>Feminino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="masculino">Masculinho
+            </label>
+
+        </div>
+
+        <!-- <button class="botao" type="submit" onsubmit="">Enviar</button> -->
+        <button class="botao" onclick="alert('Obrigada pelo seu contato')">Enviar</button>
+        <br>
+        <br>
+        <h3 class="voltar"><a href="index.html" rel="prev">Voltar para página inicial</a></h3>
+
+    </form>
+
+
+</body>
+</html>
